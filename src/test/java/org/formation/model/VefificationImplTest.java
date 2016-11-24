@@ -13,4 +13,13 @@ public class VefificationImplTest {
 		
 	}
 
+	
+	@Test
+	public void test_taille_login_superieur2() {
+		Verification verif = new VefificationImpl();
+		int taille = verif.taillelogin("audrey");
+		boolean condition = taille > 2;
+		assertTrue(condition);
+		
+	}
 }
